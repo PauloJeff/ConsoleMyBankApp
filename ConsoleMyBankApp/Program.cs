@@ -36,6 +36,13 @@ namespace ConsoleMyBankApp
 
             Console.WriteLine("Seu saldo é de R${0}", conta.getSaldo());
             Console.WriteLine("Seu saldo é de R${0}", contaSilvia.getSaldo());
+
+            ContaPoupanca contaPoupanca = new ContaPoupanca(cliente, 01, 0003);
+
+            Console.WriteLine("Conta Poupanças Criada");
+            Console.WriteLine("Titular: {0}", contaPoupanca.getTitular().getNome());
+            Console.WriteLine("Agência: {0}", contaPoupanca.getAgencia());
+            Console.WriteLine("Conta: {0}", contaPoupanca.getConta());
         }
     }
 }
